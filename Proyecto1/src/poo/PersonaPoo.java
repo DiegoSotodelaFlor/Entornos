@@ -25,8 +25,12 @@ public class PersonaPoo {
         this.añosdeexperiencia=añosdeexperiencia;
     }
     public void mostrarInformacion(){
-        System.out.println("Nombre: "+this.nombre+", edad: "+this.getEdad()+" y en la direccion: "+this.direccion);
+        System.out.println("Nombre: "+this.nombre+", edad: "+this.getEdad()+", en la direccion: "+this.direccion+", apellidos: "+this.apellidos+", DNI: "+this.DNI+", email"+this.email+"telefono: "+this.telefono+"profesion: "+this.profesion);
         }
+         private String getEdad() {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'getEdad'");
+    }
          public void setDireccion (String direccion){
             this.direccion=direccion;
         }
@@ -51,7 +55,7 @@ public class PersonaPoo {
     public void setProfesion (String profesion){
             this.profesion=profesion;
         }
-    public void setAxosdeexperiencia (int añosdeexperiencia){
+    public void setAñosdeexperiencia (int añosdeexperiencia){
             this.añosdeexperiencia=añosdeexperiencia;
         }
     public boolean estajubilado(){
