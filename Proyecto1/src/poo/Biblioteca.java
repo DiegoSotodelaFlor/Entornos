@@ -8,8 +8,8 @@ public class Biblioteca {
     String direccion;
     int horaApertura; //hora por defecto 9
     int horaCierre; //hora por defecto 22
-List<libro> libros;
-List<sala> salas;
+    List<libro> libros;
+    List<sala> salas;
 
     public Biblioteca (String nombre,String direccion, int horadeapertura, int horacierre){
         this.nombre=nombre;
