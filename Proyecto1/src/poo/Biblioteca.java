@@ -72,6 +72,4 @@ public class Biblioteca {
         public void informacion() {
         System.out.println("Biblioteca: " + nombre + ", " + direccion +". Abierto de " + horaApertura + ":00 a " + horaCierre + ":00.");
     }
-
 }
-
