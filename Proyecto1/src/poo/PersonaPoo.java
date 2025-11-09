@@ -2,15 +2,15 @@ package poo;
 
 public class PersonaPoo {
     /*definicion de atributos de la persona */
-    String nombre;
-    int edad;
-    String direccion;
-    String apellidos;
-    String DNI;
-    String email;
-    String telefono;
-    String profesion;
-    int añosdeexperiencia;
+    private String nombre;
+    private int edad;
+    private String direccion;
+    private String apellidos;
+    private String DNI;
+    private String email;
+    private String telefono;
+    private String profesion;
+    private int añosdeexperiencia;
     //definicion del comportamiento de la persona
 
     public PersonaPoo (String nombre, int edad,String direccion,String apellidos,String DNI,String email,String telefono,String profesion,int añosdeexperiencia){
@@ -58,6 +58,30 @@ public class PersonaPoo {
     public void setAñosdeexperiencia (int añosdeexperiencia){
             this.añosdeexperiencia=añosdeexperiencia;
         }
+
+public String getApellidos() {
+    return apellidos;
+}
+
+public String getDNI() {
+    return DNI;
+}
+
+public String getEmail() {
+    return email;
+}
+
+public String getTelefono() {
+    return telefono;
+}
+
+public String getProfesion() {
+    return profesion;
+}
+
+public int getAñosdeexperiencia() {
+    return añosdeexperiencia;
+}
     public boolean estajubilado(){
         if(this.edad>65){
             System.out.println("La persona en cuestion se encuentra en la jubilacion");
