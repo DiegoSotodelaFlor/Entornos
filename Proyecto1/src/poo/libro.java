@@ -77,9 +77,9 @@ public class libro {
 
     public void estaDisponible() {
         if (disponible) {
-            System.out.println("El libro \"" + titulo + "\" está disponible para reserva.");
+            System.out.println("El libro " + titulo + " está disponible para reserva.");
         } else {
-            System.out.println("El libro \"" + titulo + "\" no está disponible para reserva.");
+            System.out.println("El libro " + titulo + " no está disponible para reserva.");
         }
     }
 
