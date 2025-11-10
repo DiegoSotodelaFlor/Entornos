@@ -55,7 +55,7 @@ public class PersonaPoo {
     public void setProfesion (String profesion){
             this.profesion=profesion;
         }
-    public void setAñosdeexperiencia (int añosdeexperiencia){
+    public void setAñosdeExperiencia (int añosdeexperiencia){
             this.añosdeexperiencia=añosdeexperiencia;
         }
 
@@ -79,10 +79,10 @@ public String getProfesion(){
     return profesion;
 }
 
-public int getAñosdeexperiencia(){
+public int getAñosdeExperiencia(){
     return añosdeexperiencia;
 }
-    public boolean estajubilado(){
+    public boolean estaJubilado(){
         if(this.edad>65){
             System.out.println("La persona en cuestion se encuentra en la jubilacion");
             return true;

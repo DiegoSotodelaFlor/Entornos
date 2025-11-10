@@ -36,23 +36,23 @@ private String nombre;
     }
 
     public void setNombre(String nombre){
-        this.nombre = nombre;
+        this.nombre=nombre;
     }
 
     public void setCapacidad(int capacidad){
-        this.capacidad = capacidad;
+        this.capacidad=capacidad;
     }
 
     public void setPizarra(boolean pizarra){
-        this.pizarra = pizarra;
+        this.pizarra=pizarra;
     }
 
     public void setTipo(String tipo){
-        this.tipo = tipo;
+        this.tipo=tipo;
     }
 
     public void setDisponible(boolean disponible){
-        this.disponible = disponible;
+        this.disponible=disponible;
     }
 
     public void estaDisponible(){
@@ -72,11 +72,10 @@ private String nombre;
             System.out.println("La sala "+nombre+" no dispone de pizarra.");
         }
     }
-
+    //preguntar azahara
     public void mostrarInformacion() {
         String textoPizarra=pizarra?"dispone de pizarra":"no dispone de pizarra";
         String textoDisponible=disponible?"está disponible para su reserva":"no está disponible para su reserva";
-
         System.out.println("Sala: "+nombre+", "+capacidad+" personas. Se utiliza para "+tipo+", "+textoPizarra+" y "+textoDisponible+".");
     }
 }

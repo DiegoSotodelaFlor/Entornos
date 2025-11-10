@@ -37,19 +37,19 @@ public class Biblioteca {
     }
 
     public void setNombre(String nombre){
-        this.nombre = nombre;
+        this.nombre=nombre;
     }
 
     public void setDireccion(String direccion){
-        this.direccion = direccion;
+        this.direccion=direccion;
     }
 
     public void setHoraApertura(int horaapertura){
-        this.horaapertura =horaapertura;
+        this.horaapertura=horaapertura;
     }
 
     public void setHoraCierre(int horacierre){
-        this.horacierre = horacierre;
+        this.horacierre=horacierre;
     }
     //si esta abierta o no
     public void estaAbierta(int hora){
@@ -61,6 +61,7 @@ public class Biblioteca {
         }
     }
     //extranjero o no
+    //preguntar azahara
     /*public void esExtranjero(String pais){
         if(!pais.equalsIgnoreCase("España")){
             System.out.println("El libro " + nombre + " es extranjero (" + pais + ").");
