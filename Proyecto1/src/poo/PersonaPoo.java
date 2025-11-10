@@ -62,23 +62,18 @@ public class PersonaPoo {
 public String getApellidos(){
     return apellidos;
 }
-
 public String getDNI(){
     return DNI;
 }
-
 public String getEmail(){
     return email;
 }
-
 public String getTelefono(){
     return telefono;
 }
-
 public String getProfesion(){
     return profesion;
 }
-
 public int getAñosdeExperiencia(){
     return añosdeexperiencia;
 }

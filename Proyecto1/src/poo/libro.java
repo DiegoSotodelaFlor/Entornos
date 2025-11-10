@@ -22,64 +22,51 @@ public class libro {
     public String getTitulo(){
         return titulo;
     }
-
     public String getIsbn(){
         return isbn;
     }
-
     public String getEditorial(){
         return editorial;
     }
-
     public String getIdioma(){
         return idioma;
     }
-
     public int getNumPaginas(){
         return numPaginas;
     }
-
     public int getAnio(){
         return anyo;
     }
-
     public boolean getDisponible(){
         return disponible;
     }
-
     public void setTitulo(String titulo){
         this.titulo=titulo;
     }
-
     public void setIsbn(String isbn){
         this.isbn=isbn;
     }
-
     public void setEditorial(String editorial){
         this.editorial=editorial;
     }
-
     public void setIdioma(String idioma){
         this.idioma=idioma;
     }
-
     public void setNumPaginas(int numPaginas){
         this.numPaginas=numPaginas;
     }
-
     public void setAnio(int anyo){
         this.anyo=anyo;
     }
-
     public void setDisponible(boolean disponible){
         this.disponible=disponible;
     }
 
     public void estaDisponible(){
         if (disponible) {
-            System.out.println("El libro "+titulo+" esta disponible para reserva.");
+            System.out.println("Esta disponible para reserva.");
         } else {
-            System.out.println("El libro "+titulo+" no esta disponible para reserva.");
+            System.out.println("No esta disponible para reserva.");
         }
     }
 

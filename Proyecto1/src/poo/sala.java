@@ -18,58 +18,49 @@ private String nombre;
     public String getNombre(){
         return nombre;
     }
-
     public int getCapacidad(){
         return capacidad;
     }
-
     public boolean isPizarra(){
         return pizarra;
     }
-
     public String getTipo(){
         return tipo;
     }
-
     public boolean isDisponible(){
         return disponible;
     }
-
     public void setNombre(String nombre){
         this.nombre=nombre;
     }
-
     public void setCapacidad(int capacidad){
         this.capacidad=capacidad;
     }
-
     public void setPizarra(boolean pizarra){
         this.pizarra=pizarra;
     }
-
     public void setTipo(String tipo){
         this.tipo=tipo;
     }
-
     public void setDisponible(boolean disponible){
         this.disponible=disponible;
     }
 
     public void estaDisponible(){
         if(disponible){
-            System.out.println("La sala "+nombre+" está disponible para su reserva.");
+            System.out.println("Esta disponible para su reserva.");
         } 
         else{
-            System.out.println("La sala "+nombre+" no está disponible para su reserva.");
+            System.out.println("No esta disponible para su reserva.");
         }
     }
 
     public void tienePizarra(){
         if (pizarra) {
-            System.out.println("La sala "+nombre+" dispone de pizarra.");
+            System.out.println("Tiene pizarra.");
         } 
         else {
-            System.out.println("La sala "+nombre+" no dispone de pizarra.");
+            System.out.println("No tiene pizarra.");
         }
     }
 

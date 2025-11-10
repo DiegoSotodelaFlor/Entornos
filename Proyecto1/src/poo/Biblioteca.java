@@ -23,31 +23,24 @@ public class Biblioteca {
      public String getNombre(){
         return nombre;
     }
-
     public String getDireccion(){
         return direccion;
     }
-
     public int getHoraApertura(){
         return horaapertura;
     }
-
     public int getHoraCierre(){
         return horacierre;
     }
-
     public void setNombre(String nombre){
         this.nombre=nombre;
     }
-
     public void setDireccion(String direccion){
         this.direccion=direccion;
     }
-
     public void setHoraApertura(int horaapertura){
         this.horaapertura=horaapertura;
     }
-
     public void setHoraCierre(int horacierre){
         this.horacierre=horacierre;
     }
