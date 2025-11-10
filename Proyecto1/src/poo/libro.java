@@ -85,15 +85,21 @@ public class libro {
 
     public void esExtranjero(){
         if (!idioma.equalsIgnoreCase("español")) {
-            System.out.println("El libro "+titulo+" esta escrito en  ("+idioma+").");
+            System.out.println("Esta escrito en un idioma extranjero.");
         } else{
-            System.out.println("El libro "+titulo+" esta escrito en español.");
+            System.out.println("Esta escrito en español.");
         }
     }
-    //preguntar azahara
+    
     public void mostrarInformacion() {
-        String estado=disponible?"Esta disponible":"No esta disponible";
+        String estado="";
+        if(disponible){
+            estado="Esta disponible";
+        }
+        else{
+            estado="Esta disponible";
+        }
+        
         System.out.println("Libro: "+titulo+", "+editorial+","+anyo+", "+idioma+", "+numPaginas+" paginas, "+estado+".");
     }
-
-}
+    }

@@ -62,14 +62,14 @@ public class Biblioteca {
     }
     //extranjero o no
     //preguntar azahara
-    /*public void esExtranjero(String pais){
+    public void esExtranjero(String pais){
         if(!pais.equalsIgnoreCase("España")){
-            System.out.println("El libro " + nombre + " es extranjero (" + pais + ").");
+            System.out.println("El libro es extranjero ("+pais+").");
         } 
         else{
-            System.out.println("El libro " + nombre + " es español.");
+            System.out.println("El libro es español.");
         }
-    }*/
+    }
     //mostrar
         public void mostrarInformacion(){
         System.out.println("Biblioteca: "+nombre+", "+direccion+". Abierto de "+horaapertura+":00 a "+horacierre+":00.");

@@ -72,10 +72,23 @@ private String nombre;
             System.out.println("La sala "+nombre+" no dispone de pizarra.");
         }
     }
-    //preguntar azahara
+
     public void mostrarInformacion() {
-        String textoPizarra=pizarra?"dispone de pizarra":"no dispone de pizarra";
-        String textoDisponible=disponible?"está disponible para su reserva":"no está disponible para su reserva";
+        String textoPizarra="";
+        String textoDisponible="";
+        if(pizarra){
+            textoPizarra="tiene pizarra";
+        }
+        else{
+            textoPizarra="no tiene pizarra";
+        }
+
+        if(disponible){
+            textoDisponible="esta disponible para reserva";
+        }
+        else{
+            textoDisponible="no esta disponible para reserva";
+        }
         System.out.println("Sala: "+nombre+", "+capacidad+" personas. Se utiliza para "+tipo+", "+textoPizarra+" y "+textoDisponible+".");
     }
 }
