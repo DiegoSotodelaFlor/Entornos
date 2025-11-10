@@ -4,7 +4,7 @@ public class sala {
 private String nombre;
     private int capacidad;
     private boolean pizarra;
-    private String tipo; // estudio, lectura o infantil
+    private String tipo;
     private boolean disponible;
 
     public sala(String nombre, int capacidad, boolean pizarra, String tipo, boolean disponible) {
