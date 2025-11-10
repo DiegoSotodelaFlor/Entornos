@@ -59,27 +59,27 @@ public class PersonaPoo {
             this.añosdeexperiencia=añosdeexperiencia;
         }
 
-public String getApellidos() {
+public String getApellidos(){
     return apellidos;
 }
 
-public String getDNI() {
+public String getDNI(){
     return DNI;
 }
 
-public String getEmail() {
+public String getEmail(){
     return email;
 }
 
-public String getTelefono() {
+public String getTelefono(){
     return telefono;
 }
 
-public String getProfesion() {
+public String getProfesion(){
     return profesion;
 }
 
-public int getAñosdeexperiencia() {
+public int getAñosdeexperiencia(){
     return añosdeexperiencia;
 }
     public boolean estajubilado(){

@@ -6,94 +6,94 @@ public class libro {
     private String editorial;
     private String idioma;
     private int numPaginas;
-    private int anio;
+    private int anyo;
     private boolean disponible;
 
-    public libro(String titulo, String isbn, String editorial, String idioma, int numPaginas, int anio, boolean disponible) {
+    public libro(String titulo, String isbn, String editorial, String idioma, int numPaginas, int anyo, boolean disponible) {
         this.titulo = titulo;
         this.isbn = isbn;
         this.editorial = editorial;
         this.idioma = idioma;
         this.numPaginas = numPaginas;
-        this.anio = anio;
+        this.anyo = anyo;
         this.disponible = disponible;
     }
 
-    public String getTitulo() {
+    public String getTitulo(){
         return titulo;
     }
 
-    public String getIsbn() {
+    public String getIsbn(){
         return isbn;
     }
 
-    public String getEditorial() {
+    public String getEditorial(){
         return editorial;
     }
 
-    public String getIdioma() {
+    public String getIdioma(){
         return idioma;
     }
 
-    public int getNumPaginas() {
+    public int getNumPaginas(){
         return numPaginas;
     }
 
-    public int getAnio() {
-        return anio;
+    public int getAnio(){
+        return anyo;
     }
 
-    public boolean isDisponible() {
+    public boolean getDisponible(){
         return disponible;
     }
 
-    public void setTitulo(String titulo) {
+    public void setTitulo(String titulo){
         this.titulo = titulo;
     }
 
-    public void setIsbn(String isbn) {
+    public void setIsbn(String isbn){
         this.isbn = isbn;
     }
 
-    public void setEditorial(String editorial) {
+    public void setEditorial(String editorial){
         this.editorial = editorial;
     }
 
-    public void setIdioma(String idioma) {
+    public void setIdioma(String idioma){
         this.idioma = idioma;
     }
 
-    public void setNumPaginas(int numPaginas) {
+    public void setNumPaginas(int numPaginas){
         this.numPaginas = numPaginas;
     }
 
-    public void setAnio(int anio) {
-        this.anio = anio;
+    public void setAnio(int anyo){
+        this.anyo = anyo;
     }
 
-    public void setDisponible(boolean disponible) {
+    public void setDisponible(boolean disponible){
         this.disponible = disponible;
     }
 
-    public void estaDisponible() {
+    public void estaDisponible(){
         if (disponible) {
-            System.out.println("El libro " + titulo + " está disponible para reserva.");
+            System.out.println("El libro "+titulo+" esta disponible para reserva.");
         } else {
-            System.out.println("El libro " + titulo + " no está disponible para reserva.");
+            System.out.println("El libro "+titulo+" no esta disponible para reserva.");
         }
     }
 
-    public void esExtranjero() {
+    public void esExtranjero(){
         if (!idioma.equalsIgnoreCase("español")) {
-            System.out.println("El libro " + titulo + " está escrito en un idioma extranjero (" + idioma + ").");
-        } else {
-            System.out.println("El libro " + titulo + " está escrito en español.");
+            System.out.println("El libro "+titulo+" esta escrito en  ("+idioma+").");
+        } else{
+            System.out.println("El libro "+titulo+" esta escrito en español.");
         }
     }
 
-    public void informacion() {
-        String estado = disponible ? "Está disponible" : "No está disponible";
-        System.out.println("Libro: " + titulo + ", " + editorial + "," + anio + ", " + idioma + ", " + numPaginas + " paginas, " + estado + ".");
+    public void mostrarInformacion() {
+        String estado=disponible?"Esta disponible":"No esta disponible";
+        System.out.println("Libro: "+titulo+", "+editorial+","+anyo+", "+idioma+", "+numPaginas+" paginas, "+estado+".");
     }
 
 }

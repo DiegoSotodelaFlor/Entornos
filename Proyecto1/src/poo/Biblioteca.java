@@ -6,54 +6,54 @@ import java.util.List;
 public class Biblioteca {
     String nombre;
     String direccion;
-    int horaApertura; //hora por defecto 9
-    int horaCierre; //hora por defecto 22
+    int horaapertura; //hora por defecto 9
+    int horacierre; //hora por defecto 22
     List<libro> libros;
     List<sala> salas;
 
     public Biblioteca (String nombre,String direccion, int horadeapertura, int horacierre){
         this.nombre=nombre;
         this.direccion=direccion;
-        this.horaApertura=9;
-        this.horaCierre=22;
+        this.horaapertura=9;
+        this.horacierre=22;
         this.libros=new ArrayList<libro>();
         this.salas=new ArrayList<sala>();
     } 
 
-     public String getNombre() {
+     public String getNombre(){
         return nombre;
     }
 
-    public String getDireccion() {
+    public String getDireccion(){
         return direccion;
     }
 
-    public int getHoraApertura() {
-        return horaApertura;
+    public int getHoraApertura(){
+        return horaapertura;
     }
 
-    public int getHoraCierre() {
-        return horaCierre;
+    public int getHoraCierre(){
+        return horacierre;
     }
 
-    public void setNombre(String nombre) {
+    public void setNombre(String nombre){
         this.nombre = nombre;
     }
 
-    public void setDireccion(String direccion) {
+    public void setDireccion(String direccion){
         this.direccion = direccion;
     }
 
-    public void setHoraApertura(int horaApertura) {
-        this.horaApertura = horaApertura;
+    public void setHoraApertura(int horaapertura){
+        this.horaapertura =horaapertura;
     }
 
-    public void setHoraCierre(int horaCierre) {
-        this.horaCierre = horaCierre;
+    public void setHoraCierre(int horacierre){
+        this.horacierre = horacierre;
     }
     //si esta abierta o no
     public void estaAbierta(int hora){
-        if(hora>this.horaApertura && hora<this.horaCierre){
+        if(hora>this.horaapertura && hora<this.horacierre){
             System.out.println("La biblioteca esta abierta");
         }
         else{
@@ -61,15 +61,16 @@ public class Biblioteca {
         }
     }
     //extranjero o no
-    public void esExtranjero() {
-        if (!pais.equalsIgnoreCase("España")) {
-            System.out.println("La biblioteca " + nombre + " se encuentra en el extranjero (" + pais + ").");
-        } else {
-            System.out.println("La biblioteca " + nombre + " se encuentra en España.");
+    /*public void esExtranjero(String pais){
+        if(!pais.equalsIgnoreCase("España")){
+            System.out.println("El libro " + nombre + " es extranjero (" + pais + ").");
+        } 
+        else{
+            System.out.println("El libro " + nombre + " es español.");
         }
-    }
+    }*/
     //mostrar
-        public void informacion() {
-        System.out.println("Biblioteca: " + nombre + ", " + direccion +". Abierto de " + horaApertura + ":00 a " + horaCierre + ":00.");
+        public void mostrarInformacion(){
+        System.out.println("Biblioteca: "+nombre+", "+direccion+". Abierto de "+horaapertura+":00 a "+horacierre+":00.");
     }
 }
