@@ -87,6 +87,6 @@ public class libro {
             estado="Esta disponible";
         }
         
-        System.out.println("Libro: "+titulo+", "+editorial+","+anyo+", "+idioma+", "+numPaginas+" paginas, "+estado+".");
+        System.out.println("Libro: "+titulo+", "+editorial+", "+anyo+", "+idioma+", "+numPaginas+" paginas, "+estado+".");
     }
     }

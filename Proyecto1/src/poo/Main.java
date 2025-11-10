@@ -4,15 +4,16 @@ public class Main {
        
         //personapoo
         PersonaPoo persona1=new PersonaPoo("Mbappe",26, "Calle larga","Perez", "34567823S","persona1@gmail.com","657483929","carpintero",20);
-        PersonaPoo persona2=new PersonaPoo("Lamine",18,"","","","","","",0);
+        PersonaPoo persona2=new PersonaPoo("Lamine",18,"Calle Corta","Letran","34567890N","persona2@gmail.com","657338153","fontanero",0);
         persona1.mostrarInformacion();
         persona1.estaJubilado();
+        persona2.mostrarInformacion();
         persona2.estaJubilado();
 
 
         //libro
-        libro libro1 = new libro("La vida de Asier", "978-84-376-0494-7", "Sudamericana", "Español", 471, 1967, true);
-        libro libro2 = new libro("La vida de Asier segunda parte", "978-0-7475-3269-9", "Bloomsbury", "Inglés", 223, 1997, false);
+        libro libro1 = new libro("La vida de Asier", "978-84-376-0494-7", "Anaya", "Español", 471, 1967, true);
+        libro libro2 = new libro("La vida de Asier Segunda Parte", "978-0-7475-3269-9", "Ibrea", "Inglés", 223, 1997, false);
         libro1.mostrarInformacion();
         libro1.estaDisponible();
         libro1.esExtranjero();

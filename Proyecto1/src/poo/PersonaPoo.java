@@ -25,17 +25,12 @@ public class PersonaPoo {
         this.añosdeexperiencia=añosdeexperiencia;
     }
     public void mostrarInformacion(){
-        System.out.println("Nombre: "+this.nombre+", edad: "+this.getEdad()+", en la direccion: "+this.direccion+", apellidos: "+this.apellidos+", DNI: "+this.DNI+", email"+this.email+"telefono: "+this.telefono+"profesion: "+this.profesion);
+        System.out.println("Nombre: "+this.nombre+", edad: "+this.edad+", en la direccion: "+this.direccion+", apellidos: "+this.apellidos+", DNI: "+this.DNI+", email"+this.email+"telefono: "+this.telefono+"profesion: "+this.profesion);
         }
-         private String getEdad() {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'getEdad'");
-    }
+
          public void setDireccion (String direccion){
             this.direccion=direccion;
         }
-
-
 
     public void setEdad (int edad){
             this.edad=edad;
@@ -59,6 +54,9 @@ public class PersonaPoo {
             this.añosdeexperiencia=añosdeexperiencia;
         }
 
+public int  getEdad(){
+    return edad;
+}
 public String getApellidos(){
     return apellidos;
 }
