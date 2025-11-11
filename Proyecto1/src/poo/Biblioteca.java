@@ -4,12 +4,12 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Biblioteca {
-    String nombre;
-    String direccion;
-    int horaapertura; //hora por defecto 9
-    int horacierre; //hora por defecto 22
-    List<libro> libros;
-    List<sala> salas;
+    private  String nombre;
+    private String direccion;
+    private int horaapertura; //hora por defecto 9
+    private int horacierre; //hora por defecto 22
+    private List<libro> libros;
+    private List<sala> salas;
 
     public Biblioteca (String nombre,String direccion, int horadeapertura, int horacierre){
         this.nombre=nombre;
@@ -44,6 +44,19 @@ public class Biblioteca {
     public void setHoraCierre(int horacierre){
         this.horacierre=horacierre;
     }
+
+    public void addLibro(libro l){
+        libros.add(l);
+    }
+    public void removeLibro(libro l){
+        libros.remove(l);
+    }
+    public void addSala(sala s){
+        salas.add(s);
+    }
+    public void removeSala(sala s){
+        salas.remove(s);
+    }
     //si esta abierta o no
     public void estaAbierta(int hora){
         if(hora>this.horaapertura && hora<this.horacierre){
@@ -61,6 +74,28 @@ public class Biblioteca {
         } 
         else{
             System.out.println("El libro es español.");
+        }
+    }
+    //mostrar libros
+    public void mostrarLibros(){
+        //variable temporal que almacena 1 libro
+        libro libroa;
+        //bucle que se ejecutara dependiendo del numero de libros que haya
+        for(int i=0;i<libros.size();i++){
+            //establecer la variable de libro con el libro en la posicion i
+            libroa=libros.get(i);
+            libroa.mostrarInformacion();
+        }
+    }
+        //mostrar salas
+        public void mostrarSalas(){
+        //variable temporal que almacena 1 sala
+        sala salaa;
+        //bucle que se ejecutara dependiendo del numero de salas que haya
+        for(int i=0;i<salas.size();i++){
+            //establecer la variable de libro con el libro en la posicion i
+            salaa=salas.get(i);
+            salaa.mostrarInformacion();
         }
     }
     //mostrar
