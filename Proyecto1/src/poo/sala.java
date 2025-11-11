@@ -1,11 +1,15 @@
 package poo;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class sala {
 private String nombre;
     private int capacidad;
     private boolean pizarra;
     private String tipo;
     private boolean disponible;
+    private List<persona> personas;
 
     public sala(String nombre, int capacidad, boolean pizarra, String tipo, boolean disponible) {
         this.nombre = nombre;
@@ -13,6 +17,7 @@ private String nombre;
         this.pizarra = pizarra;
         this.tipo = tipo;
         this.disponible = disponible;
+        this.personas=new ArrayList<persona>();
     }
 
     public String getNombre(){

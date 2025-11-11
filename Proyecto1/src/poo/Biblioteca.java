@@ -98,6 +98,15 @@ public class Biblioteca {
             salaa.mostrarInformacion();
         }
     }
+    //buscar libro preguntar rostik
+    public libro buscarLibroPorTitulo(String titulo) {
+        for (libro l : libros) {
+            if (l.getTitulo().equalsIgnoreCase(titulo)) {
+                return l; 
+            }
+        }
+        return null;
+    }
     //mostrar
         public void mostrarInformacion(){
         System.out.println("Biblioteca: "+nombre+", "+direccion+". Abierto de "+horaapertura+":00 a "+horacierre+":00.");
