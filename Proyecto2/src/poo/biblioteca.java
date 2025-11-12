@@ -133,6 +133,9 @@ public class biblioteca {
         }
         return null;
     }
+    public void asignarResponsable(sala s, persona p){
+        s.asignarResponsable(p);
+    }
     //mostrar
         public void mostrarInformacion(){
         System.out.println("Biblioteca: "+nombre+", "+direccion+". Abierto de "+horaapertura+":00 a "+horacierre+":00.");

@@ -8,4 +8,8 @@ public class librodigital extends libro{
         this.formato=formato;
         this.tamanyoMB=tamanyoMB;
     }
+    public void mostrarInformacionDigital(){
+        mostrarInformacion();
+        System.out.println(formato+tamanyoMB);
+    }
 }
