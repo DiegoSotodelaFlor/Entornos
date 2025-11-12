@@ -7,16 +7,14 @@ public class sala {
 private String nombre;
     private int capacidad;
     private boolean pizarra;
-    private String tipo;
     private boolean disponible;
     private List<persona> personas;
     private persona responsable;
 
-    public sala(String nombre, int capacidad, boolean pizarra, String tipo, boolean disponible) {
+    public sala(String nombre, int capacidad, boolean pizarra, boolean disponible) {
         this.nombre = nombre;
         this.capacidad = capacidad;
         this.pizarra = pizarra;
-        this.tipo = tipo;
         this.disponible = disponible;
         this.personas=new ArrayList<persona>();
     }
@@ -30,9 +28,7 @@ private String nombre;
     public boolean isPizarra(){
         return pizarra;
     }
-    public String getTipo(){
-        return tipo;
-    }
+ 
     public boolean isDisponible(){
         return disponible;
     }
@@ -45,9 +41,7 @@ private String nombre;
     public void setPizarra(boolean pizarra){
         this.pizarra=pizarra;
     }
-    public void setTipo(String tipo){
-        this.tipo=tipo;
-    }
+ 
     public void setDisponible(boolean disponible){
         this.disponible=disponible;
     }
