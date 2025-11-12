@@ -51,6 +51,30 @@ private String nombre;
         this.disponible=disponible;
     }
 
+public void entrarPersona(persona p){
+    if(personas.size()<this.capacidad){
+        personas.add(p);
+    }
+    else System.out.println("La sala esta llena");
+}
+
+public void salirPersona(persona p){
+    if(!personas.isEmpty()){
+        personas.remove(p);
+    }
+    else System.out.println("la sala esta vacia");
+}
+
+    public void mostrarPersonas(){
+        persona p;
+        for(int i=0;i<personas.size();i++){
+            p=personas.get(i);
+            System.out.println(i+" Nombre: "+p.getNombre()+" Apellidos: "+p.getApellidos()+" Edad: "+p.getEdad()+" Email: "+p.getEmail());
+        }
+    }
+    public int getPersonaSize(){
+        return personas.size();
+    }
     public void estaDisponible(){
         if(disponible){
             System.out.println("Esta disponible para su reserva.");

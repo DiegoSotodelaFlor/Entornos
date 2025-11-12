@@ -1,6 +1,6 @@
 package poo;
 
-public class PersonaPoo {
+public class persona{
     /*definicion de atributos de la persona */
     private String nombre;
     private int edad;
@@ -13,7 +13,7 @@ public class PersonaPoo {
     private int añosdeexperiencia;
     //definicion del comportamiento de la persona
 
-    public PersonaPoo (String nombre, int edad,String direccion,String apellidos,String DNI,String email,String telefono,String profesion,int añosdeexperiencia){
+    public persona (String nombre, int edad,String direccion,String apellidos,String DNI,String email,String telefono,String profesion,int añosdeexperiencia){
         this.nombre=nombre;
         this.edad=edad;
         this.direccion=direccion;
@@ -31,7 +31,9 @@ public class PersonaPoo {
          public void setDireccion (String direccion){
             this.direccion=direccion;
         }
-
+        public void setNombre (String nombre){
+            this.nombre=nombre;
+        }
     public void setEdad (int edad){
             this.edad=edad;
         }
@@ -53,12 +55,14 @@ public class PersonaPoo {
     public void setAñosdeExperiencia (int añosdeexperiencia){
             this.añosdeexperiencia=añosdeexperiencia;
         }
-
+   public String getNombre(){
+    return nombre;
+}
 public int  getEdad(){
     return edad;
 }
 public String getApellidos(){
-    return apellidos;
+    return this.apellidos;
 }
 public String getDNI(){
     return DNI;

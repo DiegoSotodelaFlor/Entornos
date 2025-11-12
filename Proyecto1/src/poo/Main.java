@@ -3,8 +3,8 @@ public class Main {
     public static void main(String[] args) throws Exception {
        
         //personapoo
-        PersonaPoo persona1=new PersonaPoo("Mbappe",26, "Calle larga","Perez", "34567823S","persona1@gmail.com","657483929","carpintero",20);
-        PersonaPoo persona2=new PersonaPoo("Lamine",18,"Calle Corta","Letran","34567890N","persona2@gmail.com","657338153","fontanero",0);
+        persona persona1=new persona("Mbappe",26, "Calle larga","Perez", "34567823S","persona1@gmail.com","657483929","carpintero",20);
+        persona persona2=new persona("Lamine",18,"Calle Corta","Letran","34567890N","persona2@gmail.com","657338153","fontanero",0);
         persona1.mostrarInformacion();
         persona1.estaJubilado();
         persona2.mostrarInformacion();
@@ -22,7 +22,7 @@ public class Main {
         libro2.esExtranjero();
 
         //biblioteca
-        Biblioteca biblioteca = new Biblioteca("Biblioteca El Puerto", "Av. del Ejército 10", 9, 18);
+        biblioteca biblioteca = new biblioteca("Biblioteca El Puerto", "Av. del Ejército 10", 9, 18);
         biblioteca.mostrarInformacion();
         biblioteca.estaAbierta(10); 
         biblioteca.estaAbierta(20);

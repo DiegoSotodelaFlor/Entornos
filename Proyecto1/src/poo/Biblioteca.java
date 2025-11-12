@@ -3,7 +3,7 @@ package poo;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Biblioteca {
+public class biblioteca {
     private  String nombre;
     private String direccion;
     private int horaapertura; //hora por defecto 9
@@ -11,7 +11,7 @@ public class Biblioteca {
     private List<libro> libros;
     private List<sala> salas;
 
-    public Biblioteca (String nombre,String direccion, int horadeapertura, int horacierre){
+    public biblioteca (String nombre,String direccion, int horadeapertura, int horacierre){
         this.nombre=nombre;
         this.direccion=direccion;
         this.horaapertura=9;
@@ -57,6 +57,7 @@ public class Biblioteca {
     public void removeSala(sala s){
         salas.remove(s);
     }
+
     //si esta abierta o no
     public void estaAbierta(int hora){
         if(hora>this.horaapertura && hora<this.horacierre){
@@ -98,7 +99,28 @@ public class Biblioteca {
             salaa.mostrarInformacion();
         }
     }
-    //buscar libro preguntar rostik
+
+    //mostrar salas libres
+    public void mostrarSalasDisponibles(){
+        sala s;
+        int j=1;
+        for(int i=0;i<salas.size();i++){
+            s=salas.get(i);
+            if(s.getPersonaSize()==0){
+                System.out.print(j+ " ");
+                s.mostrarInformacion();
+                j++;
+            }
+        }
+    }
+    public void personasTotales(){
+        int persona=0;
+        for(sala s:salas){
+            persona+=s.getPersonaSize();
+        }
+        System.out.println("Hay "+persona+" persona/s");
+    }
+    //buscar libro
     public libro buscarLibroPorTitulo(String titulo) {
         for (libro l : libros) {
             if (l.getTitulo().equalsIgnoreCase(titulo)) {
