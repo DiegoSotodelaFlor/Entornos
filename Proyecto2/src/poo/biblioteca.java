@@ -11,6 +11,7 @@ public class biblioteca {
     private List<libro> libros;
     private List<sala> salas;
 
+
     public biblioteca (String nombre,String direccion, int horadeapertura, int horacierre){
         this.nombre=nombre;
         this.direccion=direccion;
@@ -112,6 +113,9 @@ public class biblioteca {
                 j++;
             }
         }
+    }
+    public void registrarVisita(persona p){
+        System.out.println(p.getNombre()+" ha visitado la biblioteca");
     }
     public void personasTotales(){
         int persona=0;

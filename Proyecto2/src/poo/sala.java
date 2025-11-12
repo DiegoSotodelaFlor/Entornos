@@ -10,6 +10,7 @@ private String nombre;
     private String tipo;
     private boolean disponible;
     private List<persona> personas;
+    private persona responsable;
 
     public sala(String nombre, int capacidad, boolean pizarra, String tipo, boolean disponible) {
         this.nombre = nombre;
@@ -74,6 +75,9 @@ public void salirPersona(persona p){
     }
     public int getPersonaSize(){
         return personas.size();
+    }
+    public void asignarResponsable(persona p){
+        this.responsable=p;
     }
     public void estaDisponible(){
         if(disponible){

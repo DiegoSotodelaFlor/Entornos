@@ -5,16 +5,14 @@ public class libro {
     private String isbn;
     private String editorial;
     private String idioma;
-    private int numPaginas;
     private int anyo;
     private boolean disponible;
 
-    public libro(String titulo, String isbn, String editorial, String idioma, int numPaginas, int anyo, boolean disponible) {
+    public libro(String titulo, String isbn, String editorial, String idioma, int anyo, boolean disponible) {
         this.titulo = titulo;
         this.isbn = isbn;
         this.editorial = editorial;
         this.idioma = idioma;
-        this.numPaginas = numPaginas;
         this.anyo = anyo;
         this.disponible = disponible;
     }
@@ -31,9 +29,7 @@ public class libro {
     public String getIdioma(){
         return idioma;
     }
-    public int getNumPaginas(){
-        return numPaginas;
-    }
+    
     public int getAnio(){
         return anyo;
     }
@@ -52,9 +48,7 @@ public class libro {
     public void setIdioma(String idioma){
         this.idioma=idioma;
     }
-    public void setNumPaginas(int numPaginas){
-        this.numPaginas=numPaginas;
-    }
+    
     public void setAnio(int anyo){
         this.anyo=anyo;
     }
