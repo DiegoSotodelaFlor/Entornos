@@ -72,6 +72,7 @@ public void salirPersona(persona p){
     }
     public void asignarResponsable(persona p){
         this.responsable=p;
+        
     }
     public void estaDisponible(){
         if(disponible){

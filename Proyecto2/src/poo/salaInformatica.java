@@ -4,7 +4,11 @@ public class salaInformatica extends sala{
     private int numEquipos;
 public salaInformatica (String nombre, int capacidad, boolean pizarra, boolean disponible){
     super (nombre, capacidad, pizarra,disponible);
-this.numEquipos=numEquipos;s
+this.numEquipos=numEquipos;
+}
+public void mostrarInformacionInformatica(){
+    mostrarInformacion();
+    System.out.println(numEquipos);
 }
 
 }

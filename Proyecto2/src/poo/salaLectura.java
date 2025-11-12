@@ -7,4 +7,8 @@ public class salaLectura extends sala {
         super (nombre, capacidad, pizarra, disponible);
         this.listaLibros=new ArrayList<libro>();
     }
+    public void mostrarInformacionLectura(){
+    mostrarInformacion();
+    System.out.println(listaLibros);
+}
 }

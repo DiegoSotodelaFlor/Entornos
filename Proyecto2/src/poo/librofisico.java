@@ -8,4 +8,8 @@ public class librofisico extends libro{
         this.numPaginas=numPaginas;
         this.ubicacion=ubicacion;
     }
+    public void mostrarInformacionFisico(){
+        mostrarInformacion();
+        System.out.println(numPaginas+ubicacion);
+    }
 }

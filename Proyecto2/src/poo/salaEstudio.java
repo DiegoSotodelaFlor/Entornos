@@ -6,4 +6,8 @@ public salaEstudio (String nombre, int capacidad, boolean pizarra, boolean dispo
     super (nombre, capacidad, pizarra, disponible);
 this.numMesas=numMesas;
 }
+public void mostrarInformacionEstudio(){
+    mostrarInformacion();
+    System.out.println(numMesas);
+}
 }

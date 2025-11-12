@@ -11,4 +11,8 @@ public class usuario extends persona {
     this.numSocio=numSocio;
     this.ListaLibrosPrestados=new ArrayList<libro>();
 }
+public void mostrarInformacionUsuario(){
+        mostrarInformacion();
+        System.out.println(numSocio+ListaLibrosPrestados);
+}
 }

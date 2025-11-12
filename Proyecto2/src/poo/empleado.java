@@ -8,4 +8,8 @@ public class empleado extends persona {
         this.puesto=puesto;
         this.sueldo=sueldo;
 }
+public void mostrarInformacionEmpleado(){
+        mostrarInformacion();
+        System.out.println(puesto+sueldo);
+}
 }
