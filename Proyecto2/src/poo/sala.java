@@ -107,6 +107,6 @@ public void salirPersona(persona p){
         else{
             textoDisponible="no esta disponible para reserva";
         }
-        System.out.println("Sala: "+nombre+", "+capacidad+" personas. Se utiliza para "+tipo+", "+textoPizarra+" y "+textoDisponible+".");
+        System.out.println("Sala: "+nombre+", "+capacidad+" personas.,"+textoPizarra+" y "+textoDisponible+".");
     }
 }
