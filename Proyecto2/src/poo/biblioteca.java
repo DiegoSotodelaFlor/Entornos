@@ -133,9 +133,8 @@ public class biblioteca {
         }
         return null;
     }
-    public sala asignarResponsable(sala s, persona p){
+    public void asignarResponsable(sala s, persona p){
         s.asignarResponsable(p);
-        return s;
     }
     //mostrar
         public void mostrarInformacion(){

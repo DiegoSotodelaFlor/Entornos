@@ -18,15 +18,15 @@ public class Main {
         //biblioteca
         biblioteca biblioteca=new biblioteca("Biblioteca Central", "Av. del Ejército 10", 9, 18);
         biblioteca.mostrarInformacion();
-        biblioteca.asignarResponsable(sala1, persona1).mostrarInformacion();
-         //sala
+        //sala
         salaEstudio sala1=new salaEstudio("Sala de Estudio 1", 20, true, true);
         salaLectura sala2=new salaLectura("Sala de Lectura 2", 15, false, false);
-        salaInformatica sala3=new salaInformatica("Sala de Informatica 3", 10, false, true)
+        salaInformatica sala3=new salaInformatica("Sala de Informatica 3", 10, false, true);
         sala1.mostrarInformacionEstudio();
         sala2.mostrarInformacionLectura();
         sala3.mostrarInformacionInformatica();
-
+        
+        biblioteca.asignarResponsable(sala1, persona1);
         
 
         
