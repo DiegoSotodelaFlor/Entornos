@@ -3,8 +3,8 @@ public class Main {
     public static void main(String[] args) throws Exception {
        
         //personapoo
-        usuario persona1=new usuario("Mbappe",26, "Calle larga","Perez", "34567823S","persona1@gmail.com","657483929","carpintero",20);
-        empleado persona2=new empleado("Lamine",18,"Calle Corta","Letran","34567890N","persona2@gmail.com","657338153","fontanero",0);
+        usuario persona1=new usuario("Mbappe",26, "Calle larga","Perez", "34567823S","persona1@gmail.com","657483929","carpintero",20, "11");
+        empleado persona2=new empleado("Lamine",18,"Calle Corta","Letran","34567890N","persona2@gmail.com","657338153","fontanero",0, "limpiador",1800);
         persona1.mostrarInformacionUsuario();
         persona2.mostrarInformacionEmpleado();
     
@@ -19,9 +19,9 @@ public class Main {
         biblioteca biblioteca=new biblioteca("Biblioteca Central", "Av. del Ejército 10", 9, 18);
         biblioteca.mostrarInformacion();
         //sala
-        salaEstudio sala1=new salaEstudio("Sala de Estudio 1", 20, true, true);
+        salaEstudio sala1=new salaEstudio("Sala de Estudio 1", 20, true, true, 10);
         salaLectura sala2=new salaLectura("Sala de Lectura 2", 15, false, false);
-        salaInformatica sala3=new salaInformatica("Sala de Informatica 3", 10, false, true);
+        salaInformatica sala3=new salaInformatica("Sala de Informatica 3", 10, false, true, 15);
         sala1.mostrarInformacionEstudio();
         sala2.mostrarInformacionLectura();
         sala3.mostrarInformacionInformatica();

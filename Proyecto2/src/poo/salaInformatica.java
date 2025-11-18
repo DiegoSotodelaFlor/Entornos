@@ -2,7 +2,7 @@ package poo;
 
 public class salaInformatica extends sala{
     private int numEquipos;
-public salaInformatica (String nombre, int capacidad, boolean pizarra, boolean disponible){
+public salaInformatica (String nombre, int capacidad, boolean pizarra, boolean disponible, int numEquipos){
     super (nombre, capacidad, pizarra,disponible);
 this.numEquipos=numEquipos;
 }
