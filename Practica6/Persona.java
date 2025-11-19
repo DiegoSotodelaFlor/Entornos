@@ -10,14 +10,15 @@ public class Persona {
     private String dni;
     private String nombre;
     private Date fechaNacimiento;
+    private int edad;
 
-    public Persona(String dni, String nombre, Date fechaNacimiento){
+    public Persona(String dni, String nombre, Date fechaNacimiento, int edad){
         this.dni=dni;
         this.nombre=nombre;
         this.fechaNacimiento=fechaNacimiento;
+        this.edad=edad;
     }
-    public int getEdad(){
-        
-    }
-
+    public void setEdad (int edad){
+            this.edad=edad;
+        }
 }

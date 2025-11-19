@@ -9,5 +9,7 @@ public class Estudiante {
     public Estudiante(boolean repetidor){
         this.repetidor=repetidor;
     }
-    public void inscribirse(Curso c)
+    public void inscribirse(Curso c){
+        
+    }
 }

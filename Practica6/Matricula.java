@@ -14,7 +14,7 @@ public class Matricula {
         this.notaFinal=notaFinal;
         this.fecha=fecha;
     }
-    public void calcularNotaFinal(){
+    public void calcularNotaFinal(double notaFinal){
         
     }
 }

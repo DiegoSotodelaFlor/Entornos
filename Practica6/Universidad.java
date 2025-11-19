@@ -1,7 +1,5 @@
 package Entornos.Practica6;
 
-import poo.sala;
-
 /*clase Universidad
 atributos: private String nombre.
 clase Profesor
@@ -14,7 +12,7 @@ public class Universidad {
     public Universidad(double salario){
         this.salario=salario;
     }
-    public void asignarCurso(){
+    public void asignarCurso(Curso c){
         
     }
 }
