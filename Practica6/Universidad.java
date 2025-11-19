@@ -2,17 +2,12 @@ package Entornos.Practica6;
 
 /*clase Universidad
 atributos: private String nombre.
-clase Profesor
-atributos: private double salario
-método: public void asignarCurso(Curso c)
  */
 public class Universidad {
-    private double salario;
+    private String nombre;
 
-    public Universidad(double salario){
-        this.salario=salario;
+    public Universidad(String nombre){
+        this.nombre=nombre;
     }
-    public void asignarCurso(Curso c){
-        
-    }
+    
 }

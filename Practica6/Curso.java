@@ -14,7 +14,7 @@ public class Curso {
         this.cupoMaximo=cupoMaximo;
     } 
     public void inscribirse(Estudiante e, Matricula m){
-        m.inscribirse=e;
+    
     }
 }
 
