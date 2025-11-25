@@ -23,7 +23,7 @@ abstract class Producto  {
     //Metodos y funciones
     public abstract double calcularPrecioFinal(); //Lo usare para el iva y descuento
     public String mostrarInfo(){
-        return "Nombre: "+nombre+", Precio: "+String.format("%.2f €",precio);
+        return "Nombre: "+nombre+", Precio: "+String.format("%.2f euros",precio);
     }
     @Override
     public String toString(){

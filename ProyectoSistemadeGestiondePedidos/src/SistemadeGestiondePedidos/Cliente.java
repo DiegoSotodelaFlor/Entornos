@@ -30,7 +30,7 @@ public class Cliente {
     }
     //Metodos y funciones
     public String mostrarInfo(){
-        return "Nombre"+nombre+", Correo: "+correo+", Direccion: "+direccion;
+        return "Nombre: "+nombre+", Correo: "+correo+", Direccion: "+direccion;
     }
     @Override
     public String toString() {

@@ -22,7 +22,7 @@ public class ProductoFisico extends Producto {
     }
     @Override
     public String mostrarInfo(){
-        return super.mostrarInfo()+", Envío: "+String.format("%.2f €",costeEnvio);
+        return super.mostrarInfo()+", Envío: "+String.format("%.2f euros",costeEnvio);
     }
     @Override
     public String toString(){

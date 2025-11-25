@@ -3,7 +3,7 @@ public class ProductoDigital extends Producto{
     private String tamanyoDescarga;
     private String licencia;
     //Constructor
-    public ProductoDigital(String nombre, double precio, double costeEnvio){
+    public ProductoDigital(String nombre, double precio, String tamanyoDescarga, String licencia){
         super (nombre, precio);
         this.tamanyoDescarga=tamanyoDescarga;
         this.licencia=licencia;
@@ -30,7 +30,7 @@ public class ProductoDigital extends Producto{
     }
     @Override
     public String mostrarInfo(){
-        return super.mostrarInfo()+", Licencia: " + licencia+", Tamaño de descarga en MB: "+tamanyoDescarga;
+        return super.mostrarInfo()+", Licencia: " + licencia+" Tamaño de descarga en MB: "+tamanyoDescarga;
     }
     @Override
     public String toString(){
