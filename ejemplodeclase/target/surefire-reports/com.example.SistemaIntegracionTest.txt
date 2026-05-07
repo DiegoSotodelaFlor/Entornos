@@ -1,0 +1,13 @@
+-------------------------------------------------------------------------------
+Test set: com.example.SistemaIntegracionTest
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.087 s <<< FAILURE! -- in com.example.SistemaIntegracionTest
+com.example.SistemaIntegracionTest.testCalculoPrecioFinalConEnvio -- Time elapsed: 0.011 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: La factura da un resultado incorrecto. Resultado obtenido: FACT-f279a | Total: 22.99€ ==> expected: <true> but was: <false>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:158)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:139)
+	at org.junit.jupiter.api.AssertTrue.failNotTrue(AssertTrue.java:69)
+	at org.junit.jupiter.api.AssertTrue.assertTrue(AssertTrue.java:41)
+	at org.junit.jupiter.api.Assertions.assertTrue(Assertions.java:228)
+	at com.example.SistemaIntegracionTest.testCalculoPrecioFinalConEnvio(SistemaIntegracionTest.java:42)
+
